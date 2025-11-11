@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrato - XV Años de Megan</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #909090;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .company-name {
+            font-size: 2rem;
+            color: #606060;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .company-subtitle {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .contract-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: #333;
+            margin: 30px 0 20px;
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            color: #606060;
+            margin-bottom: 15px;
+            font-weight: 700;
+            border-left: 4px solid #c0c0c0;
+            padding-left: 15px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .info-label {
+            font-weight: 700;
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .info-value {
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        .package-details {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #c0c0c0;
+        }
+
+        .package-title {
+            font-size: 1.5rem;
+            color: #606060;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .package-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .package-list li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #333;
+        }
+
+        .package-list li:before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+        }
+
+        .package-extras {
+            background: #e8f0f5;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            border-left: 4px solid #6ca0c0;
+        }
+
+        .package-extras-title {
+            font-weight: 700;
+            color: #4a7a95;
+            margin-bottom: 10px;
+        }
+
+        .pricing-table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        .pricing-table th,
+        .pricing-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .pricing-table th {
+            background: #909090;
+            color: white;
+            font-weight: 700;
+        }
+
+        .pricing-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .total-row {
+            background: #f9f9f9;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .signatures {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .signature-box {
+            text-align: center;
+        }
+
+        .signature-line {
+            border-top: 2px solid #333;
+            margin-top: 60px;
+            padding-top: 10px;
+        }
+
+        .terms {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .terms-title {
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .terms ul {
+            padding-left: 20px;
+        }
+
+        .terms li {
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .signatures {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="company-name">PRODUCCIONES FORO 7</div>
+            <div class="company-subtitle">Fotografía, Video, Dron e Invitaciones Web</div>
+            <div class="company-subtitle">WhatsApp: 477-920-3776</div>
+        </div>
+
+        <h1 class="contract-title">CONTRATO DE SERVICIOS FOTOGRÁFICOS Y VIDEO</h1>
+
+        <div class="section">
+            <h2 class="section-title">Datos del Evento</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-label">Evento:</div>
+                    <div class="info-value">XV Años</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Quinceañera:</div>
+                    <div class="info-value">Megan</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Fecha del Evento:</div>
+                    <div class="info-value">9 de Agosto, 2025</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Contratante:</div>
+                    <div class="info-value">Cristina Padierna Sandoval</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Detalles del Evento</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-label">Ceremonia Religiosa:</div>
+                    <div class="info-value">Templo San Juan de Dios</div>
+                    <div class="info-value" style="font-size: 0.9rem; color: #666;">12:00 PM</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Recepción:</div>
+                    <div class="info-value">Salón Temporal</div>
+                    <div class="info-value" style="font-size: 0.9rem; color: #666;">3:00 PM - 10:00 PM</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Paquete Contratado</h2>
+            <div class="package-details">
+                <div class="package-title">PAQUETE XV AÑOS BÁSICO - $5,000</div>
+                <p style="text-align: center; color: #666; margin-bottom: 20px;">
+                    Cobertura: Ceremonia 12:00 PM + Fiesta 3:00 PM - 10:00 PM
+                </p>
+
+                <ul class="package-list">
+                    <li>50 fotos impresas en alta calidad (5x7 pulgadas)</li>
+                    <li>Todas las fotos digitales entregadas en USB (editadas y retocadas)</li>
+                    <li>1 foto ampliada con marco elegante</li>
+                    <li>Caja impresa de lujo para guardar las fotos</li>
+                    <li>Respaldo de las imágenes en redes sociales (Facebook)</li>
+                    <li>Película en USB de alta calidad (edición cinematográfica)</li>
+                    <li>Edición musicalizada con temas personalizados</li>
+                </ul>
+
+                <div class="package-extras">
+                    <div class="package-extras-title">Servicios Adicionales:</div>
+                    <ul class="package-list">
+                        <li>Video completo del evento (12:00 PM - 10:00 PM) - $1,000</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Desglose de Pagos</h2>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th style="text-align: right;">Monto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paquete XV Años Básico</td>
+                        <td style="text-align: right;">$5,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>Video Completo del Evento</td>
+                        <td style="text-align: right;">$1,000.00</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td>TOTAL</td>
+                        <td style="text-align: right;">$6,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>Anticipo recibido (durante la sesión fotográfica)</td>
+                        <td style="text-align: right;">$2,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>Pago recibido en misa</td>
+                        <td style="text-align: right;">$500.00</td>
+                    </tr>
+                    <tr>
+                        <td>Pago recibido al terminar el evento</td>
+                        <td style="text-align: right;">$2,500.00</td>
+                    </tr>
+                    <tr>
+                        <td>Saldo Restante</td>
+                        <td style="text-align: right;">$1,000.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <div class="terms">
+                <div class="terms-title">Términos y Condiciones:</div>
+                <ul>
+                    <li>Se recibió un anticipo de $2,000 durante la sesión fotográfica previa.</li>
+                    <li>Se recibieron $500 en la ceremonia religiosa y $2,500 al terminar el evento.</li>
+                    <li>El saldo restante de $1,000 deberá liquidarse antes de la entrega del material.</li>
+                    <li>La sesión fotográfica previa se realizó el 31 de julio de 2025 en Forum Cultural Guanajuato a las 3:00 PM.</li>
+                    <li>La entrega del material digital y físico se realizará en un plazo de 30 a 45 días después del evento.</li>
+                    <li>El cliente tendrá acceso a un selector de fotos en línea para elegir las imágenes que desea imprimir.</li>
+                    <li>Los derechos de autor de las fotografías y videos pertenecen a Producciones Foro 7.</li>
+                    <li>El cliente puede usar el material para fines personales y compartir en redes sociales.</li>
+                    <li>Producciones Foro 7 se reserva el derecho de usar el material con fines promocionales.</li>
+                    <li>Cualquier servicio adicional no contemplado en este contrato será cotizado por separado.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="signatures">
+            <div class="signature-box">
+                <div class="signature-line">
+                    <strong>Cristina Padierna Sandoval</strong><br>
+                    Contratante
+                </div>
+            </div>
+            <div class="signature-box">
+                <div class="signature-line">
+                    <strong>Producciones Foro 7</strong><br>
+                    Prestador de Servicios
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; color: #666; font-size: 0.9rem;">
+            Fecha de firma: 9 de Agosto de 2025
+        </div>
+    </div>
+</body>
+</html>

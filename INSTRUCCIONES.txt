@@ -1,0 +1,133 @@
+================================================================
+    PROYECTO XV AÑOS - MEGAN
+    INSTRUCCIONES DE USO
+================================================================
+
+Este proyecto incluye:
+1. Contrato profesional con tema plateado
+2. Selector de fotos interactivo
+3. Scripts de Python para procesar las fotos
+
+================================================================
+PASO 1: CONVERTIR LAS FOTOS A WEBP
+================================================================
+
+1. Abre el archivo: convert_to_webp.py
+
+2. El script ya está configurado para leer de:
+   - Fotos de sesión: F:\2025\08\09\fotos\sesion\editar las omprimes en webp
+   - Fotos de fiesta: F:\2025\08\09\fotos\fiesta\SI\SI\reencuadradas\editadas\descomprimidas
+
+3. Ejecuta el script:
+   python convert_to_webp.py
+
+4. El script automáticamente:
+   - Convertirá todas las fotos de JPG a WebP
+   - Las numerará secuencialmente (foto_001.webp, foto_002.webp, etc.)
+   - Las guardará en: C:\Users\foro7\xv-anos-megan\images
+   - Actualizará el archivo selector.js con el número correcto de fotos
+
+================================================================
+PASO 2: USAR EL SELECTOR DE FOTOS
+================================================================
+
+1. Abre el archivo en tu navegador:
+   C:\Users\foro7\xv-anos-megan\selector.html
+
+2. El selector te permite:
+   - Ver todas las fotos convertidas
+   - Clasificarlas en categorías:
+     * Ampliación (recomendado: 1 foto)
+     * Impresión (recomendado: 50 fotos)
+     * Redes Sociales (sin límite)
+     * Descartadas
+
+   - Agregar sugerencias de cambios:
+     * Para el video (por minuto)
+     * Para las fotos (por número)
+
+   - Exportar las selecciones en formato JSON
+   - Ver el video de la fiesta
+   - Filtrar fotos por categoría
+
+3. Cuando termines de seleccionar:
+   - Haz clic en "📥 Descargar Reporte"
+   - Se descargará un archivo JSON con todas tus selecciones
+   - IMPORTANTE: Envía este archivo por WhatsApp al 4779203776
+
+================================================================
+PASO 3: CLASIFICAR LAS FOTOS ORIGINALES (OPCIONAL)
+================================================================
+
+Si necesitas clasificar las fotos originales en JPG:
+
+1. Descarga el archivo JSON del selector (Paso 2)
+
+2. Abre: clasificar_fotos.py
+
+3. Actualiza la ruta del archivo JSON:
+   archivo_json = r"C:\Users\foro7\Downloads\seleccion-megan-[FECHA].json"
+
+4. Ejecuta el script:
+   python clasificar_fotos.py
+
+5. El script creará carpetas y copiará las fotos:
+   F:\2025\08\09\fotos\clasificadas\
+   ├── ampliacion/
+   ├── impresion/
+   ├── redes_sociales/
+   ├── descartada/
+   └── sin_clasificar/
+
+================================================================
+ARCHIVOS DEL PROYECTO
+================================================================
+
+xv-anos-megan/
+├── contrato.html           # Contrato con tema plateado
+├── selector.html           # Selector interactivo de fotos
+├── convert_to_webp.py      # Script para convertir fotos
+├── clasificar_fotos.py     # Script para clasificar fotos
+├── css/
+│   ├── selector.css        # Estilos con tema plateado
+│   └── proteccion.css      # Protección de imágenes
+├── js/
+│   ├── selector.js         # Lógica del selector
+│   └── proteccion.js       # Protección JavaScript
+├── images/                 # Fotos convertidas a WebP
+└── INSTRUCCIONES.txt       # Este archivo
+
+================================================================
+CARACTERÍSTICAS DEL SELECTOR
+================================================================
+
+✓ Tema plateado elegante
+✓ Protección contra descarga de imágenes
+✓ Guardado automático en localStorage
+✓ Navegación con teclado (flechas, Enter, Esc)
+✓ Responsive (funciona en móviles)
+✓ Filtrado por categorías
+✓ Contador de fotos por categoría
+✓ Advertencias cuando excedes los límites
+✓ Sistema de feedback para videos y fotos
+✓ Video de YouTube integrado
+
+================================================================
+NOTAS IMPORTANTES
+================================================================
+
+1. Las selecciones se guardan automáticamente en el navegador
+2. Puedes cerrar y abrir el selector, tus selecciones se mantendrán
+3. El botón "Limpiar Todo" borra todas las selecciones
+4. Siempre descarga y envía el reporte JSON por WhatsApp
+5. El selector funciona completamente offline (excepto el video)
+
+================================================================
+SOPORTE
+================================================================
+
+Para dudas o problemas, contacta:
+WhatsApp: 477-920-3776
+Email: foro7producciones@gmail.com
+
+================================================================
